@@ -1,11 +1,16 @@
 :root {
-  --outline: 1px solid red;
+  --outline: 1px solid yellow;
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
   --text-main: #434455;
   --hero-background: #2e2f42;
   --light-background: #f4f4fd;
   --white-background: #ffffff;
+  --icons-gray: #8e8f99;
+  --icons-blue: #404bbf;
+}
+section {
+  outline: var(--outline)
 }
 /* --reset-- */
 h1,
@@ -63,6 +68,8 @@ body {
 /* --header-- */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -96,11 +103,6 @@ body {
   align-items: center;
   gap: 40px;
 }
-/*
-.nav-item. {
-  margin-right: 40px;
-}
-*/
 .nav-text {
   display: inline-block;
   padding-top: 24px;
@@ -114,11 +116,6 @@ body {
 .text-nav:focus {
   color: var(--pressed-state, #404bbf);
 }
-/*
-.nav-menu .nav-item:last-child {
-  margin-right: 0px;
-}
-*/
 .adress-menu {
   display: flex;
   align-items: center;
@@ -135,16 +132,18 @@ body {
   font-style: normal;
   color: var(--pressed-state, #404bbf);
 }
-/*
-.adress-menu .adress-item:last-child {
-  margin-right: 0px;
-}
-*/
 /* --hero-- */
 .hero-container {
+  margin: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
   background-color: var(--hero-background, #2e2f42);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/img-name.jpg);
 }
 .text-hero {
   margin-left: auto;
@@ -178,7 +177,6 @@ body {
   background: var(--pressed-state, #404bbf);
 }
 /* --advantages-- */
-
 .advantages-container {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -187,17 +185,22 @@ body {
   display: flex;
   gap: 24px;
 }
+.advantege-container-icon {
+  margin-bottom: 8px;
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .list-advantages {
   width: calc((100% - 72px) / 4);
 }
-/*
-  width: 264px;
-  margin-right: 24px;*/
-/*
-.container-advantages .list-advantages:last-child {
-  margin-right: 0px;
-}
-*/
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -217,14 +220,11 @@ body {
 .work-menu {
   display: flex;
   gap: 24px;
-  /* justify-content: space-between;*/
 }
 
 .work-item {
   width: calc((100% - 48px) / 3);
-  /* margin-right: 24px;*/
 }
-
 /* --Team-- */
 
 .team {
@@ -246,10 +246,12 @@ body {
 .team-menu {
   display: flex;
   gap: 24px;
-  /*justify-content: space-between;*/
 }
 .team-list {
   width: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-card {
   padding-top: 32px;
@@ -265,6 +267,72 @@ body {
 }
 .text-team {
   text-align: center;
+}
+
+.team-card-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-card-list {
+  width: 40px;
+  height: 40px;
+
+  /* outline: var(--outline); */
+}
+.team-card-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+.team-card-list :hover,
+.team-card-list :active {
+  background-color: var(--pressed-state);
+}
+.team-card-icon {
+  width: 16px;
+  height: 16px;
+  /* Для svg в класі заданий стиль fill: в який записана css змінна зі значенням #f4f4fd для визначення кольору іконки */
+}
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-title {
+  margin-bottom: 72px;
+}
+
+.customers-menu {
+  display: flex;
+  gap: 24px;
+}
+.customers-list {
+  height: 88px;
+  width: calc(100%- (5 * 24) / 6);
+}
+
+.customers-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icons-gray);
+  border-radius: 4px;
+  color: var(--icons-gray);
+  outline: var(--outline);
+}
+.customers-icon {
+  width: 104px;
+  height: 56px;
+}
+.customers-item :hover,
+.customers-item :active {
+  background-color: var(--pressed-state);
 }
 /* --footer-- */
 .footer {
