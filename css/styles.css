@@ -139,7 +139,7 @@ body {
   padding-bottom: 188px;
   max-width: 1440px;
   background-repeat: no-repeat;
-  
+  background-position: center;
   background-size: cover;
   background-color: var(--hero-background, #2e2f42);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -226,7 +226,9 @@ body {
   width: calc((100% - 48px) / 3);
 }
 /* --Team-- */
-
+.color {
+  padding-bottom: 32px;
+}
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -288,6 +290,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
+  fill: #fff;
 }
 .team-card-list :hover,
 .team-card-list :active {
@@ -296,6 +299,7 @@ body {
 .team-card-icon {
   width: 16px;
   height: 16px;
+  
   /* Для svg в класі заданий стиль fill: в який записана css змінна зі значенням #f4f4fd для визначення кольору іконки */
 }
 .customers {
@@ -324,6 +328,7 @@ body {
   border: 1px solid var(--icons-gray);
   border-radius: 4px;
   color: var(--icons-gray);
+  fill: currentColor;
   outline: var(--outline);
 }
 .customers-icon {
@@ -332,13 +337,20 @@ body {
 }
 .customers-item :hover,
 .customers-item :active {
-  background-color: var(--pressed-state);
+  border-color: #404bbf;
+  color: #404bbf;
+
 }
 /* --footer-- */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background: var(--hero-background, #2e2f42);
+}
+.footer-container {
+display: flex;
+align-items: baseline;
+/* margin-right: 120px; */
 }
 .logo-web-margin {
   margin-bottom: 16px;
