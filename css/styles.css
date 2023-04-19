@@ -6,11 +6,10 @@
   --hero-background: #2e2f42;
   --light-background: #f4f4fd;
   --white-background: #ffffff;
-  --icons-gray: #8e8f99;
-  --icons-blue: #404bbf;
+  --social-icon: #31d0aa;
 }
 section {
-  outline: var(--outline)
+  outline: var(--outline);
 }
 /* --reset-- */
 h1,
@@ -187,9 +186,6 @@ body {
 }
 .advantege-container-icon {
   margin-bottom: 8px;
-  width: 64px;
-  height: 64px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,9 +293,7 @@ body {
   background-color: var(--pressed-state);
 }
 .team-card-icon {
-  width: 16px;
-  height: 16px;
-  
+
   /* Для svg в класі заданий стиль fill: в який записана css змінна зі значенням #f4f4fd для визначення кольору іконки */
 }
 .customers {
@@ -308,6 +302,7 @@ body {
 }
 .customers-title {
   margin-bottom: 72px;
+  line-height: 1.1;
 }
 
 .customers-menu {
@@ -316,7 +311,7 @@ body {
 }
 .customers-list {
   height: 88px;
-  width: calc(100%- (5 * 24) / 6);
+  width: calc((100% - 120px) / 6);
 }
 
 .customers-item {
@@ -325,21 +320,17 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--icons-gray);
+  border: 1px solid #8e8f99;
   border-radius: 4px;
-  color: var(--icons-gray);
+  color: #8e8f99;
   fill: currentColor;
   outline: var(--outline);
 }
-.customers-icon {
-  width: 104px;
-  height: 56px;
-}
+
 .customers-item :hover,
 .customers-item :active {
   border-color: #404bbf;
   color: #404bbf;
-
 }
 /* --footer-- */
 .footer {
@@ -348,9 +339,9 @@ body {
   background: var(--hero-background, #2e2f42);
 }
 .footer-container {
-display: flex;
-align-items: baseline;
-/* margin-right: 120px; */
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
 .logo-web-margin {
   margin-bottom: 16px;
@@ -363,7 +354,41 @@ align-items: baseline;
   display: block;
   color: var(--light-background, #f4f4fd);
 }
-/* --page portfolio-- */
+.footer-text-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-menu {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+.footer-list {
+  weight: 40px;
+  height: 40px;
+}
+.footer-item {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-item :hover,
+.footer-item :focus {
+  background-color: var(--social-icon);
+}
+.footer-icon {
+  fill: #f4f4fd;
+}
+/* --p
+age portfolio-- */
 /* --filter-- */
 .portfolio {
   padding-top: 96px;
