@@ -222,7 +222,7 @@ body {
   width: calc((100% - 48px) / 3);
 }
 /* --Team-- */
-.color {
+.team-color {
   padding-bottom: 32px;
 }
 .team {
@@ -289,14 +289,11 @@ body {
   fill: #fff;
 }
 .team-card-list :hover,
-.team-card-list :active {
+.team-card-list :focus {
   background-color: var(--pressed-state);
 }
-.team-card-icon {
 
-  /* Для svg в класі заданий стиль fill: в який записана css змінна зі значенням #f4f4fd для визначення кольору іконки */
-}
-.customers {
+  .customers {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -328,7 +325,7 @@ body {
 }
 
 .customers-item :hover,
-.customers-item :active {
+.customers-item :focus {
   border-color: #404bbf;
   color: #404bbf;
 }
@@ -342,6 +339,9 @@ body {
   display: flex;
   align-items: baseline;
   gap: 120px;
+}
+.footer-container-logo {
+  margin-right: 120px;
 }
 .logo-web-margin {
   margin-bottom: 16px;
@@ -368,7 +368,7 @@ body {
   gap: 16px;
 }
 .footer-list {
-  weight: 40px;
+  width: 40px;
   height: 40px;
 }
 .footer-item {
@@ -382,7 +382,7 @@ body {
 }
 .footer-item :hover,
 .footer-item :focus {
-  background-color: var(--social-icon);
+  background-color: #31d0aa;
 }
 .footer-icon {
   fill: #f4f4fd;
@@ -433,8 +433,15 @@ age portfolio-- */
   column-gap: 24px;
   row-gap: 48px;
 }
-.portfolio-item {
+.portfolio-list {
   width: calc((100% - 48px) / 3);
+}
+.portfolio-item {
+  display: block;
+  }
+.button-filter:hover,
+.button-filter:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-card {
   outline: var(--outline);
