@@ -254,8 +254,6 @@ body {
 .team-card {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-background, #ffffff);
 }
@@ -265,6 +263,7 @@ body {
 }
 .text-team {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-card-menu {
