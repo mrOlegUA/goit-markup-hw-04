@@ -286,7 +286,9 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
-  fill: #fff;
+}
+.team-icon {
+  fill: #f4f4fd;
 }
 .team-card-list :hover,
 .team-card-list :focus {
@@ -377,6 +379,8 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
+}
+.footer-icon {
   fill: #f4f4f4;
 }
 .footer-list :hover,
@@ -416,7 +420,8 @@ body {
 .button-filter :hover,
 .button-filter :focus {
   background: var(--pressed-state, #404bbf);
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);  
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid transparent;
   color: var(--white-background, #ffffff);
   cursor: pointer;
