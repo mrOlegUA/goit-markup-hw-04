@@ -1,5 +1,5 @@
 :root {
-  --outline: 1px solid yellow;
+  /* --outline: yellow; */
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
   --text-main: #434455;
@@ -379,10 +379,9 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
-}
-.footer-icon {
-  fill: #f4f4f4;
-}
+  fill: #f4f4fd
+ }
+
 .footer-list :hover,
 .footer-list :focus {
   background-color: #31d0aa;
@@ -438,16 +437,16 @@ body {
 .portfolio-item {
   display: block;
 }
-.button-filter :hover,
-.button-filter :focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .portfolio-card {
   outline: var(--outline);
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.portfolio-item :hover,
+.portfolio-item :focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .subtitle-card {
   margin-bottom: 8px;
