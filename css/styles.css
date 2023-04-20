@@ -290,8 +290,8 @@ body {
 .team-icon {
   fill: #f4f4fd;
 }
-.team-card-list :hover,
-.team-card-list :focus {
+.team-card-item:hover,
+.team-card-item:focus {
   background-color: var(--pressed-state);
 }
 
@@ -324,8 +324,8 @@ body {
   fill: currentColor;
 }
 
-.customers-list :hover,
-.customers-list :focus {
+.customers-item:hover,
+.customers-item:focus {
   border-color: #404bbf;
   color: #404bbf;
 }
@@ -380,9 +380,8 @@ body {
   background-color: var(--primary-brand);
   fill: #f4f4fd;
 }
-
-.footer-list :hover,
-.footer-list :focus {
+.footer-item:hover,
+.footer-item:focus {
   background-color: #31d0aa;
 }
 /* --page portfolio-- */
@@ -415,14 +414,14 @@ body {
   text-align: center;
   color: var(--primary-brand, #4d5ae5);
 }
-.button-filter :hover,
-.button-filter :focus {
+.button-filter:hover ,
+.button-filter:focus {
   background: var(--pressed-state, #404bbf);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: 1px solid transparent;
+  border: 1px solid transparent #e7e9fc;;
   color: var(--white-background, #ffffff);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-menu {
   display: flex;
@@ -442,8 +441,8 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-.portfolio-item :hover,
-.portfolio-item :focus {
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
