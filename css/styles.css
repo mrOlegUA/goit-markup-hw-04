@@ -312,7 +312,6 @@ body {
   height: 88px;
   width: calc((100% - 120px) / 6);
 }
-
 .customers-item {
   display: flex;
   align-items: center;
@@ -379,8 +378,8 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
-  fill: #f4f4fd
- }
+  fill: #f4f4fd;
+}
 
 .footer-list :hover,
 .footer-list :focus {
