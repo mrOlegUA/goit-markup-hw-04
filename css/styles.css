@@ -377,14 +377,11 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
-  
+  fill: #f4f4f4;
 }
 .footer-list :hover,
 .footer-list :focus {
   background-color: #31d0aa;
-}
-.footer-icon {
-  fill: #f4f4fd;
 }
 /* --page portfolio-- */
 /* --filter-- */
